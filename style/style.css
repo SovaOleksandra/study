@@ -13,6 +13,10 @@
   font-style: normal;
 }
 
+html {
+  padding: 10px;
+}
+
 body {
   height: 100%;
   background-color: #726c6c;
@@ -25,10 +29,18 @@ body {
   color: #3d0377;
 }
 
+h1 {
+  padding: 10px;
+}
+
+.main-content p {
+  padding: 10px;
+}
+
 .container {
   width: 100%;
   max-width: 1280px;
-  padding: 20px 0;
+  padding: 0px 20px;
   margin: auto;
 }
 
@@ -40,14 +52,13 @@ body {
   color: #348a13;
 }
 
-.menu ul a {
-  transition: 0.5s;
-}
-
 .menu ul a:hover {
   background-color: #848bad;
   color: #3d1c5c;
-  margin-left: 15px;
+}
+
+.article-list__item {
+  padding: 10px;
 }
 
 .article-list h3 {
@@ -70,7 +81,7 @@ body {
   text-decoration: none;
 }
 
-.article-list p a:last-of-type {
+.article-list__item > a {
   color: #5f5e5e;
 }
 
@@ -157,6 +168,7 @@ body {
 
 .catalog ul li {
   list-style-type: none;
+  padding: 10px;
 }
 
 .catalog ul li b::before {
@@ -171,25 +183,39 @@ body {
   display: inline-block;
 }
 
-.registration-form fieldset {
+form {
+  padding: 10px;
+}
+
+fieldset {
   background-color: rgb(179, 175, 175);
   width: 35%;
   min-width: 300px;
   margin: auto;
 }
 
-.registration-form input,
+input,
 select {
   width: 100%;
   padding: 10px 20px;
   margin-bottom: 10px;
 }
 
-.registration-form input[type="radio"] {
+input[type="radio"] {
   width: auto;
 }
 
-.registration-form textarea {
+textarea {
   width: 90%;
   margin: 10px;
+}
+
+figure img {
+  float: right;
+  width: 100%;
+}
+
+figcaption {
+  font-size: 16px;
+  text-align: center;
 }
