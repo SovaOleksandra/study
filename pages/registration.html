@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../style/style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu">
+      <h1>Registration</h1>
+      <ul class="points">
+        <li><a href="../index.html">Menu</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="page-nav.html">Navigation</a></li>
+      </ul>
+    </div>
+
+    <div class="registration-form">
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+          <legend>#1Basic Input Fields</legend>
+          <div>
+            <label for="surname">Surname</label>
+            <input id="surname" type="text" required name="surname">
+          </div>
+
+          <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" required name="name">
+          </div>
+
+          <div>
+            <label for="patronymic">Patronymic</label>
+            <input id="patronymic" type="text" required name="patronymic">
+          </div>
+
+          <div>
+            <label for="date">Date of birth</label>
+            <input id="date" type="date" name="date">
+          </div>
+
+          <div>
+            <label for="photo">Photo</label>
+            <input id="photo" type="file" name="photo">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required name="email">
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" required name="password">
+          </div>
+
+          <div>
+            <label for="website">Website</label>
+            <input id="website" type="text" required name="website" value="mysite.name">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>#2 Single Choice</legend>
+          <p>Choose Gender</p>
+          <div>
+            <input id="gender1" type="radio" name="gender" value="male">
+            <label for="gender1">Male</label>
+          </div>
+          <div>
+            <input id="gender2" type="radio" name="gender" value="female">
+            <label for="gender2">Female</label>
+          </div>
+          <div>
+            <input id="gender3" type="radio" name="gender" value="none">
+            <label for="gender3">None</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>#3 Multiple Select</legend>
+          <label for="cuisine">Choose a Cuisine</label>
+          <select name="cuisine" id="cuisine" multiple size="2">
+            <option value="ukrainian">Ukrainian</option>
+            <option value="japanese">Japanese</option>
+            <option value="italic">Italic</option>
+            <option value="mediterranean">Mediterranean</option>
+            <option value="spanish">Spanish</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>#4 Multi-line Field</legend>
+          <label for="about">About Myself</label>
+          <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>#5 Control Button</legend>
+          <div>
+            <button type="submit">Save</button>
+            <button type="reset">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy;&nbsp;<b>Oleksandra Sova</b>. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
